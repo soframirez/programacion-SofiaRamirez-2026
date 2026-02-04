@@ -1,0 +1,50 @@
+def analizador_texto():
+    # Solicitar el texto al usuario
+    print(f'----------Bienvenido al Analizador de palabras----------')
+    texto = input(f'Ingrese el texto a analizar: ')
+    
+    # Parámetros de limpieza
+    simbolos = ".,;:!?"
+    ignoradas = ["el", "la", "de", "y", "a", "un", "una"]
+
+    # Limpieza del texto
+    texto_limpio = texto.lower()
+    for signo in simbolos:
+        texto_limpio = texto_limpio.replace(signo, "")
+
+    # Separar el texto en palabras
+    listita = texto_limpio.split()
+
+    # Conteo y filtro
+    conteo = {}
+    filtrito = 0
+
+    for palabra in listita:
+        if palabra not in ignoradas:
+            filtrito += 1
+            if palabra in conteo:
+                conteo[palabra] += 1
+            else:
+                conteo[palabra] = 1
+
+    # Procesamiento de resultados
+    
+    # Cantidad de palabras únicas
+    unicas = len(conteo)
+
+    # Ordena las palabras por frecuencia y crea una tupla
+    items_ordenados = list(conteo.items())
+    
+    top_5 = sorted(items_ordenados, key=lambda x: x[1], reverse=True)[:5]
+
+    # Salida
+    print("\n----- Resultados del Analisis -----")
+    print(f"Cantidad total de palabras (sin contar palabras ignoradas): {filtrito}")
+    print(f"Cantidad de palabras únicas: {unicas}")
+    
+    print("\nTop 5 palabras más repetidas:")
+    for palabra, frecuencia in top_5:
+        print(f"{palabra} -> {frecuencia}")
+
+if __name__ == "__main__":
+    analizador_texto()
