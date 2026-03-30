@@ -1,0 +1,51 @@
+[
+    {
+        "nombre": "John Watson",
+        "telefono": "555-0101",
+        "email": "watson@mail.com",
+        "edad": "42",
+        "residencia": "221B Baker St"
+    },
+    {
+        "nombre": "Mycroft Holmes",
+        "telefono": "555-0900",
+        "email": "mycroft@gov.uk",
+        "edad": "49",
+        "residencia": "Diogenes Club"
+    },
+    {
+        "nombre": "Irene Adler",
+        "telefono": "555-1234",
+        "email": "the_woman@paris.com",
+        "edad": "35",
+        "residencia": "Baden-Baden"
+    },
+    {
+        "nombre": "James Moriarty",
+        "telefono": "666-0000",
+        "email": "professor@spider.net",
+        "edad": "45",
+        "residencia": "Desconocida"
+    },
+    {
+        "nombre": "G. Lestrade",
+        "telefono": "555-9999",
+        "email": "lestrade@scotlandyard.org",
+        "edad": "50",
+        "residencia": "Londres"
+    },
+    {
+        "nombre": "Enola Holmes",
+        "telefono": "123-4567",
+        "email": "enola.holmes@gmail.com",
+        "edad": "25",
+        "residencia": "Manchester"
+    },
+    {
+        "nombre": "Sofia Ramirez",
+        "telefono": "111-4444",
+        "email": "ramirez.s@london.com",
+        "edad": "19",
+        "residencia": "Costa Rica"
+    }
+]
